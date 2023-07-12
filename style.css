@@ -1,0 +1,54 @@
+html {
+    width: 100%;
+}
+
+body {
+    background-color: hsl(273, 75%, 66%);
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.doos {
+    background-color: white;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.vrouw {
+    width: 60vw;
+    position: absolute;
+    top: 0px;
+    left: 20vw;
+}
+
+.schaduw {
+    position: absolute;
+    left: 20vw;
+    width: 60vw;
+    top: 28vw;
+}
+
+.faq {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+}
+
+.vraag {
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+}
+
+.antwoord {
+    font-family: 'Outfit', sans-serif;
+    font-size: 13px;
+    color: hsl(240, 2%, 59%);
+}

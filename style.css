@@ -10,8 +10,12 @@ article {
     margin-top: 135px;
 }
 
+.fotoBox {
+    display: none;
+}
+
 .foto {
-    position: sticky;
+    position: fixed;
 }
 
 .doos {
@@ -27,14 +31,18 @@ article {
     width: 240px;
     position: absolute;
     top: -100px;
-    left: 65px;
+    left: -120px;
 }
 
 .schaduw {
     width: 250px;
     position: absolute;
     top: 5px;
-    left: 57px;
+    left: -126px;
+}
+
+.desktop {
+    display: none;
 }
 
 .faq {
@@ -42,7 +50,7 @@ article {
     display: flex;
     justify-content: center;
     font-family: 'Outfit', sans-serif;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .vraag {
@@ -67,4 +75,69 @@ hr {
     background-color: lightgray;
     height: 1px;
     border: none;
+}
+
+@media (min-width: 1440px) {
+    .doos {
+        display: flex;
+        flex-direction: row;
+        width: 1000px;
+        justify-content: center;
+        padding-right: 100px;
+        overflow: hidden;
+        padding-bottom: 100px;
+    }
+
+    .mobiel {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    .vrouwDesktop {
+        width: 600px;
+        position: relative;
+        left: -75px;
+        top: -970px;
+    }
+
+    .schaduwDesktop {
+        width: 1000px;
+        position: relative;
+        left: -465px;
+        top: -280px;
+    }
+
+    .fotoDesktop {
+        height: 450px;
+        width: 700px;
+    }
+
+    .faq {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 10px;
+    }
+
+    .vragen {
+        width: 400px;
+        margin-right: 15px;
+    }
+
+    .vraag:hover {
+        color: hsl(14, 88%, 65%);
+    }
+
+    hr {
+        margin-right: 15px;
+    }
+
+    .fotoBox {
+        display: block;
+        position: absolute;
+        left: 300px;
+        top: 370px;
+    }
 }

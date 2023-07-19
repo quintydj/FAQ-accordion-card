@@ -10,12 +10,12 @@ article {
     margin-top: 135px;
 }
 
-.fotoBox {
+.boxDesktop {
     display: none;
 }
 
 .foto {
-    position: fixed;
+    position: relative;
 }
 
 .doos {
@@ -31,14 +31,14 @@ article {
     width: 240px;
     position: absolute;
     top: -100px;
-    left: -120px;
+    left: 60px;
 }
 
 .schaduw {
     width: 250px;
     position: absolute;
     top: 5px;
-    left: -126px;
+    left: 55px;
 }
 
 .desktop {
@@ -134,10 +134,14 @@ hr {
         margin-right: 15px;
     }
 
-    .fotoBox {
+    .boxDesktop {
         display: block;
-        position: absolute;
-        left: 300px;
-        top: 370px;
+        position: relative;
+        left: -1222px;
+        top: 235px;
+    }
+
+    .fotoBox {
+        width: 0px;
     }
 }

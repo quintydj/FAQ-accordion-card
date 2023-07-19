@@ -22,7 +22,11 @@ const img3 = document.querySelector(".img3");
 const img4 = document.querySelector(".img4");
 const img5 = document.querySelector(".img5");
 
-vragen1.addEventListener("click", function () {
+window.onload = eersteVraag();
+
+vragen1.addEventListener("click", eersteVraag);
+
+function eersteVraag() {
   if (antwoord1.style.display === "none") {
     antwoord1.style.display = "block";
     img1.style.transform = "rotate(180deg)";
@@ -32,9 +36,13 @@ vragen1.addEventListener("click", function () {
     img1.style.transform = "rotate(0deg)";
     vraag1.style.fontWeight = "300";
   }
-});
+}
 
-vragen2.addEventListener("click", function () {
+window.onload = tweedeVraag();
+
+vragen2.addEventListener("click", tweedeVraag);
+
+function tweedeVraag() {
   if (antwoord2.style.display === "none") {
     antwoord2.style.display = "block";
     img2.style.transform = "rotate(180deg)";
@@ -44,9 +52,13 @@ vragen2.addEventListener("click", function () {
     img2.style.transform = "rotate(0deg)";
     vraag2.style.fontWeight = "300";
   }
-});
+}
 
-vragen3.addEventListener("click", function () {
+window.onload = derdeVraag();
+
+vragen3.addEventListener("click", derdeVraag);
+
+function derdeVraag() {
   if (antwoord3.style.display === "none") {
     antwoord3.style.display = "block";
     img3.style.transform = "rotate(180deg)";
@@ -56,9 +68,13 @@ vragen3.addEventListener("click", function () {
     img3.style.transform = "rotate(0deg)";
     vraag3.style.fontWeight = "300";
   }
-});
+}
 
-vragen4.addEventListener("click", function () {
+window.onload = vierdeVraag();
+
+vragen4.addEventListener("click", vierdeVraag);
+
+function vierdeVraag() {
   if (antwoord4.style.display === "none") {
     antwoord4.style.display = "block";
     img4.style.transform = "rotate(180deg)";
@@ -68,9 +84,13 @@ vragen4.addEventListener("click", function () {
     img4.style.transform = "rotate(0deg)";
     vraag4.style.fontWeight = "300";
   }
-});
+}
 
-vragen5.addEventListener("click", function () {
+window.onload = vijfdeVraag();
+
+vragen5.addEventListener("click", vijfdeVraag);
+
+function vijfdeVraag() {
   if (antwoord5.style.display === "none") {
     antwoord5.style.display = "block";
     img5.style.transform = "rotate(180deg)";
@@ -80,4 +100,4 @@ vragen5.addEventListener("click", function () {
     img5.style.transform = "rotate(0deg)";
     vraag5.style.fontWeight = "300";
   }
-});
+}
